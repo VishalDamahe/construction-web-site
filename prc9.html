@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAMAHE Construction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .hidden {
+            display: none;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="C:\Users\ROHIT DAMAHE\Downloads\9ad0b795-13f9-498e-85c5-11de0e52b0ac.jpg" alt="DAMAHE Construction Logo" class="logo">
+    <h1><b>DAMAHE</b> Construction</h1>
+</header>
+
+<main>
+    <h2 >   Welcome to DAMAHE Construction <br>हम आपके सपनों के| <br><b><h1>घर</h1></b> को करते हैं साकार||</h2>
+    <div class="gallery">
+        <a href="#about"><img src="C:\Users\ROHIT DAMAHE\Downloads\ffff.jpg" alt="About Us"><br>ABOUT</a>
+        <a href="#services"><img src="C:\Users\ROHIT DAMAHE\Downloads\dd.png" alt="Our Services"><br>SERVICE</a>
+        <a href="#contact"><img src="C:\Users\ROHIT DAMAHE\Downloads\ss.png" alt="Contact Us"><br>CONTACT</a>
+    </div>
+
+    <div id="about" class="hidden">
+        <h2>About Us</h2>
+        <p >Welcome to DAMAHE Construction, <br> where quality meets integrity in every project. With years of experience in the construction industry, we specialize in delivering exceptional residential and commercial builds tailored to meet the unique needs of our clients. Our dedicated team of skilled professionals is committed to using the latest techniques and high-quality materials to ensure that each project is completed on time and within budget.
+
+            At DAMAHE Construction, we believe that strong foundations build lasting relationships. We prioritize open communication, transparency, and customer satisfaction throughout the construction process. Whether it’s a new build, renovation, or custom project, our mission is to bring your vision to life while exceeding your expectations.
+            
+            Let us help you construct not just buildings, but dreams. Contact us today to discuss your next project!</p>
+        <img src="C:\Users\ROHIT DAMAHE\Downloads\aa.jpg" alt="About Us Image">
+        <img src="C:\Users\ROHIT DAMAHE\Downloads\bb.jpg" alt="">
+        <img src="C:\Users\ROHIT DAMAHE\Downloads\cc.jpg" alt="">
+        <img src="C:\Users\ROHIT DAMAHE\Downloads\dd.jpg" alt="">
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <div id="services" class="hidden">
+        <h2>Our Services</h2>
+        <p>At DAMAHE Construction,<br> we provide a comprehensive range of services to meet all your building needs. 
+            Our expertise includes residential and commercial construction,
+             from new builds and renovations to project management and design-build services.
+              We specialize in sustainable building solutions, ensuring energy efficiency and eco-friendly practices in every project. 
+              Whether you’re looking to create your dream home or develop a commercial space, our dedicated team is committed to delivering quality, craftsmanship, and client satisfaction at every stage.<br>We offer a wide range of construction services, including:</p>
+        <ul>
+            <li>Residential Construction</li><img src="C:\Users\ROHIT DAMAHE\Downloads\ee.jpg" alt="Residential Construction work">
+            <li>Commercial Construction</li><img src="C:\Users\ROHIT DAMAHE\Downloads\gg.jpg" alt="Commercial Construction work">
+            <li>Renovations and Remodeling</li><img src="C:\Users\ROHIT DAMAHE\Downloads\hh.jpg" alt="Renovations and Remodeling">
+            <li>Project Management</li><img src="C:\Users\ROHIT DAMAHE\Downloads\ii.jpg"alt="Project Management work">
+            <li>Consultation Services</li><img src="C:\Users\ROHIT DAMAHE\Downloads\jj.jpg" alt="Consultation Services work">
+        </ul>
+        <img src="C:\Users\ROHIT DAMAHE\Downloads\kk.jpg" alt="Our Services Image" height="500" width="auto">
+        <button onclick="goBack()">Go Back</button>
+    </div>
+    <div id="contact" class="hidden">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to get a quote, please fill out the form below:</p>
+        <div class="contact-form" id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="phone" placeholder="Your Phone Number" required>
+            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </div>
+        <div id="thankYou" class="hidden">
+            <h2>Thank You!</h2>
+            <p>Your message has been successfully submitted. We will get back to you shortly!</p>
+            <button onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+    
+            
+</main>
+
+<footer>
+    <p>&copy; 2024 DAMAHE Construction. All rights reserved.</p>
+    <p>please fllow on 
+        <img src="C:\Users\ROHIT DAMAHE\Downloads\sss.jpg"alt="">
+    </p>
+</footer>
+
+<script>
+    const sections = document.querySelectorAll('main > div');
+
+    document.querySelectorAll('.gallery a').forEach(link => {
+        link.onclick = function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            sections.forEach(section => {
+                section.classList.add('hidden'); // Hide all sections
+            });
+            if (targetId) {
+                document.getElementById(targetId).classList.remove('hidden'); // Show target section
+            }
+        };
+    });
+
+    function goBack() {
+        sections.forEach(section => {
+            section.classList.add('hidden'); // Hide all sections
+        });
+        document.querySelector('.gallery').style.display = 'flex'; 
+    }
+    function submitForm() {
+    // Hide the contact form and show the thank you message
+    document.getElementById('contactForm').classList.add('hidden');
+    document.getElementById('thankYou').classList.remove('hidden');
+}
+
+</script>
+
+</body>
+</html>
